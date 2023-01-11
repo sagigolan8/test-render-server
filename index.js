@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use('/',getFoodRouter);
+app.use('/', getFoodRouter);
 
 
 app.listen(port, () => console.log(`Listening on port http://localhost:${port}`));
