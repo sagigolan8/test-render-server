@@ -5,28 +5,28 @@ exports.getFood = (req, res) => {
         case 'pizza':
             result = {
                 cameFrom: 'Italy',
-                bestBrand: 'Lacapuza',
+                topBrand: 'Lacapuza',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCCX7KS3h-P5irfnlbo5AWLbg0qEEqo0fWA&usqp=CAU',
             }
             break;
         case 'burger':
             result = {
                 cameFrom: 'Germany',
-                bestBrand: 'GDB',
+                topBrand: 'GDB',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIIzy4hLIPWl-HHeGSP-nxRknvLVyjj_3cjw&usqp=CAU',
             }
             break;
         case 'pasta':
             result = {
                 cameFrom: 'Chaina',
-                bestBrand: 'Barilla',
+                topBrand: 'Barilla',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBPFCFas_31NMMBDOBSnxr5vKfmtEmQDHnw&usqp=CAU',
             }
             break;
         case 'sushi':
             result = {
                 cameFrom: 'Japan',
-                bestBrand: 'Japanika',
+                topBrand: 'Japanika',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfxHOt39nBul0qO_Quu5HXoCReyvU074Lelg&usqp=CAU',
             }
 
@@ -34,12 +34,12 @@ exports.getFood = (req, res) => {
         case 'apple':
             result = {
                 cameFrom: 'kazakhstan',
-                bestBrand: 'Berashit',
+                topBrand: 'Berashit',
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQb4-vaunYs5sdwR3AmQMPW9amMHt2jQiGLg&usqp=CAU',
             }
             break;
-
         default:
+            result = "This Food not in the dictionary just yet."
             break;
     }
     res.send(result)
